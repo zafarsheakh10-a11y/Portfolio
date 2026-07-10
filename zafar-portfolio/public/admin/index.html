@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard — Zafar Sheikh Portfolio</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<div class="app-shell" id="appShell" style="display:none;">
+  <aside class="sidebar">
+    <div class="sidebar-brand"><span class="knot"></span> Admin Panel</div>
+    <nav class="side-nav" id="sideNav">
+      <button data-section="hero" class="active"><span class="dot"></span> Hero &amp; Identity</button>
+      <button data-section="about"><span class="dot"></span> About &amp; Results</button>
+      <button data-section="journey"><span class="dot"></span> Journey</button>
+      <button data-section="craft"><span class="dot"></span> Craft &amp; Skills</button>
+      <button data-section="projects"><span class="dot"></span> Projects</button>
+      <button data-section="edu"><span class="dot"></span> Education &amp; Languages</button>
+      <button data-section="contact"><span class="dot"></span> Contact Info</button>
+      <button data-section="theme"><span class="dot"></span> Theme &amp; Style</button>
+      <button data-section="messages"><span class="dot"></span> Messages</button>
+      <button data-section="account"><span class="dot"></span> Account</button>
+    </nav>
+    <div class="sidebar-foot">
+      <a class="btn btn-ghost btn-sm" href="/" target="_blank" rel="noopener">View live site ↗</a>
+      <button class="btn btn-ghost btn-sm" id="logoutBtn">Log out</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="main-header">
+      <div>
+        <h2 id="panelTitle">Hero &amp; Identity</h2>
+        <p class="desc" id="panelDesc">The first thing people see.</p>
+      </div>
+    </div>
+    <div id="panelContent"></div>
+  </main>
+</div>
+
+<div class="loading-block" id="loadingBlock">Loading admin panel…</div>
+<div class="toast" id="toast"></div>
+
+<script src="/assets/theme.js"></script>
+<script src="/admin/admin.js"></script>
+</body>
+</html>
